@@ -38,7 +38,12 @@ function stringToUnicode(input) {
 
 ## Fine-tuning LLama 2
 
-We fine-tuned Llama 2 7B using Gradient.AI.
+We fine-tuned Llama 2 7B using Gradient.AI ([Docs](https://docs.gradient.ai/docs/cli-quickstart)).
+
+The training data format was a JSONL file where each line looks like:
+```json
+{ "inputs": "### Instruction: Make an ASCII art about Cloud and moon\n\n### Response: \u22c6\u207a\u208a\u22c6\u0020\u263e\u0020\u22c6\u207a\u208a\u22c6\u0020\u2601\ufe0e" }
+```
 
 ## Fine-tuning GPT-3.5-Turbo
 
